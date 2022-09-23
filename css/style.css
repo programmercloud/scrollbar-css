@@ -1,0 +1,112 @@
+body {
+  background-color: #282828;
+}
+
+.scroll {
+  scrollbar-color: var(--scroll-thumb-color, grey)
+    var(--scroll-track, transparent);
+  scrollbar-width: thin;
+}
+.scroll::-webkit-scrollbar {
+  width: var(--scroll-size, 10px);
+  height: var(--scroll-size, 10px);
+}
+.scroll::-webkit-scrollbar-track {
+  background-color: var(--scroll-track, transparent);
+  border-radius: var(--scroll-track-radius, var(--scroll-radius));
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color, grey);
+  background-image: var(--scroll-thumb, none);
+  border-radius: var(--scroll-thumb-radius, var(--scroll-radius));
+}
+.scroll-1 {
+  --scroll-size: 10px;
+  --scroll-radius: 10px;
+  --scroll-track: rgb(0 0 0 / 40%);
+  --scroll-thumb-color: #dfdfdf;
+}
+.scroll-2 {
+  --scroll-size: 8px;
+  --scroll-radius: 10px;
+  --scroll-track: rgb(255 255 255 / 10%);
+  --scroll-thumb-color: rgb(0 0 0 / 80%);
+}
+.scroll-3 {
+  --scroll-size: 5px;
+  --scroll-radius: 10px;
+  --scroll-track: rgb(255 255 255 / 10%);
+  --scroll-thumb-color: #fff;
+}
+.scroll-4 {
+  --scroll-size: 12px;
+  --scroll-radius: 20px;
+  --scroll-track: rgb(0 0 0 / 40%);
+  --scroll-thumb: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.25) 20%,
+    transparent 20%,
+    transparent 40%,
+    rgba(255, 255, 255, 0.25) 40%,
+    rgba(255, 255, 255, 0.25) 60%,
+    transparent 60%,
+    transparent 80%,
+    rgba(255, 255, 255, 0.25) 80%
+  );
+  --scroll-thumb-color: #f97316;
+}
+.scroll-5 {
+  --scroll-size: 15px;
+  --scroll-radius: 20px;
+  --scroll-track: rgb(255 255 255 / 10%);
+  --scroll-thumb: linear-gradient(45deg, #00aeff, #a68eff);
+}
+.scroll-6 {
+  --scroll-size: 12px;
+  --scroll-radius: 20px;
+  --scroll-track: rgb(0 0 0 / 40%);
+  --scroll-thumb: linear-gradient(
+    rgba(255, 255, 255, 0.3) 20%,
+    transparent 20%,
+    transparent 40%,
+    rgba(255, 255, 255, 0.3) 40%,
+    rgba(255, 255, 255, 0.3) 60%,
+    transparent 60%,
+    transparent 80%,
+    rgba(255, 255, 255, 0.3) 80%
+  );
+  --scroll-thumb-color: #10b981;
+}
+
+.h400 {
+  height: 400px;
+}
+
+.h500 {
+  height: 500px;
+}
+
+.h600 {
+  height: 600px;
+}
+
+.h700 {
+  height: 700px;
+}
+
+.h800 {
+  height: 800px;
+}
+
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-right: 40px;
+}
+.demo > * {
+  height: 280px;
+  overflow-y: auto;
+  width: 50px;
+}
